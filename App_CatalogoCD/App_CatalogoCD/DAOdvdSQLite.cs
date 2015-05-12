@@ -54,7 +54,11 @@ namespace App_CatalogoCD
 					+ unDVD.Anio + ")";
 				//Console.WriteLine(sql);
 				SqliteCommand cmd = new SqliteCommand(sql, conexion);
-				return cmd.ExecuteNonQuery();
+				try{
+					return cmd.ExecuteNonQuery();
+				}catch (SqliteException){
+					throw;
+				}
 			}
 			else
 				return 0;

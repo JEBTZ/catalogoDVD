@@ -74,7 +74,12 @@ namespace App_CatalogoCD
                     (ushort)rnd.Next(1900, 2016));
 
             _catalogoDVD.Add(unDVD);
-            Console.WriteLine("Resultado de la inserción: " + dao.Insertar(unDVD));
+			try {
+				Console.WriteLine("Resultado de la inserción: " + dao.Insertar(unDVD));
+			} catch (Exception e) {
+				Console.WriteLine("Resultado de la inserción: " + e.Data);
+			}
+            
         }
 
         public void LeerDVD()
@@ -142,7 +147,7 @@ namespace App_CatalogoCD
 
 		public void FiltrarPorPais() 
 		{
-			_catalogoDVD = dao.SeleccionarPorPais("US");
+			//_catalogoDVD = dao.SeleccionarPorPais("US");
 		}
 
 		public override string ToString ()

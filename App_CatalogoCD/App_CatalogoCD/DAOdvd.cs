@@ -12,7 +12,7 @@ namespace App_CatalogoCD
 		static string IP = "localhost";
 		static string BD = "catalogo";
 		static string USER = "root";
-		static string PWD = "123";
+		static string PWD = "usuario";
         public MySqlConnection conexion;
 
         public bool Conectar()

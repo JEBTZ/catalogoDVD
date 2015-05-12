@@ -1,0 +1,23 @@
+pragma foreign_keys = 1;
+
+drop trigger if exists bi_dvd;
+create trigger bi_dvd before insert on dvd
+for each row
+when
+	new.anio not between 1800 and strftime('%Y','now')
+begin
+	--select raise(ABORT, 'Año no válido (1800-' || strftime('%Y','now') || ')');
+	--select raise(ABORT, printf('Año no valido: [1800 - %s]',strftime('%Y','now')));
+	select raise(ABORT, 'Año no valido: [1800 - 2015]');
+end;
+
+drop trigger if exists bu_dvd;
+create trigger bu_dvd before insert on dvd
+for each row
+when
+	new.anio not between 1800 and strftime('%Y','now')
+begin
+	--select raise(ABORT, 'Año no válido (1800-' || strftime('%Y','now') || ')');
+	--select raise(ABORT, printf('Año no valido: [1800 - %s]',strftime('%Y','now')));
+	select raise(ABORT, 'Año no valido: [1800 - 2015]');
+end;

@@ -2,8 +2,8 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.Workbench ActiveDocument="App_CatalogoCD/DAOdvd.cs">
     <Files>
-      <File FileName="App_CatalogoCD/UI.cs" Line="138" Column="39" />
-      <File FileName="App_CatalogoCD/Catalogo.cs" Line="143" Column="14" />
+      <File FileName="App_CatalogoCD/UI.cs" Line="1" Column="1" />
+      <File FileName="App_CatalogoCD/Catalogo.cs" Line="1" Column="1" />
       <File FileName="App_CatalogoCD/DAOdvd.cs" Line="15" Column="27" />
       <File FileName="App_CatalogoCD/DAOdvdSQLite.cs" Line="1" Column="1" />
       <File FileName="App_CatalogoCD/dvd.cs" Line="1" Column="1" />
