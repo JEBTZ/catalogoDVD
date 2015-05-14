@@ -131,19 +131,40 @@ namespace App_CatalogoCD
 
         private void btnModificar_Click_1(object sender, EventArgs e)
         {
-            ActualizarDVD();
+            try
+            {
+                ActualizarDVD();
+            }
+            catch
+            {
+                MessageBox.Show("Funcion no disponible en estos momentos.");
+            }
         }
 
         private void btnVolcar_Click(object sender, EventArgs e)
         {
-            c.XmlAFichero();
-            lblEstado.Text = c.Estado();
+            try
+            {
+                c.XmlAFichero();
+                lblEstado.Text = c.Estado();
+            }
+            catch
+            {
+                MessageBox.Show("Funcion no disponible en estos momentos.");
+            }
         }
 
         private void btnPaises_Click(object sender, EventArgs e)
         {
-            c.FiltrarPorPais();
-            rtbResultado.Text = (c.ToString());
+            try
+            {
+                c.FiltrarPorPais();
+                rtbResultado.Text = (c.ToString());
+            }
+            catch
+            {
+                MessageBox.Show("Funcion no disponible en estos momentos.");
+            }
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
