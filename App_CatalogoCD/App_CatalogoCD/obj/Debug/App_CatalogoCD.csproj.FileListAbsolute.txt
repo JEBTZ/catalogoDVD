@@ -1,0 +1,13 @@
+D:\Usuario\Escritorio\App_CatalogoCD\App_CatalogoCD\bin\Debug\App_CatalogoCD.exe.config
+D:\Usuario\Escritorio\App_CatalogoCD\App_CatalogoCD\obj\Debug\App_CatalogoCD.csprojResolveAssemblyReference.cache
+D:\Usuario\Escritorio\App_CatalogoCD\App_CatalogoCD\obj\Debug\App_CatalogoCD.GUI.resources
+D:\Usuario\Escritorio\App_CatalogoCD\App_CatalogoCD\obj\Debug\App_CatalogoCD.Properties.Resources.resources
+D:\Usuario\Escritorio\App_CatalogoCD\App_CatalogoCD\obj\Debug\App_CatalogoCD.csproj.GenerateResource.Cache
+D:\Usuario\Escritorio\App_CatalogoCD\App_CatalogoCD\bin\Debug\App_CatalogoCD.exe
+D:\Usuario\Escritorio\App_CatalogoCD\App_CatalogoCD\bin\Debug\App_CatalogoCD.pdb
+D:\Usuario\Escritorio\App_CatalogoCD\App_CatalogoCD\bin\Debug\MySql.Data.dll
+D:\Usuario\Escritorio\App_CatalogoCD\App_CatalogoCD\bin\Debug\System.Data.SQLite.dll
+D:\Usuario\Escritorio\App_CatalogoCD\App_CatalogoCD\bin\Debug\System.Data.SQLite.pdb
+D:\Usuario\Escritorio\App_CatalogoCD\App_CatalogoCD\bin\Debug\System.Data.SQLite.xml
+D:\Usuario\Escritorio\App_CatalogoCD\App_CatalogoCD\obj\Debug\App_CatalogoCD.exe
+D:\Usuario\Escritorio\App_CatalogoCD\App_CatalogoCD\obj\Debug\App_CatalogoCD.pdb

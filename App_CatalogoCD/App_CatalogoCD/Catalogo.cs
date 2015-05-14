@@ -12,8 +12,8 @@ namespace App_CatalogoCD
 		static public ushort contadorParaCodigo = 100;
 
         List<dvd> _catalogoDVD = new List<dvd>();
-        DAOdvd dao = new DAOdvd();
-		//DAOdvdSQLite dao = new DAOdvdSQLite();
+        //DAOdvd dao = new DAOdvd();
+		DAOdvdSQLite dao = new DAOdvdSQLite();
 
         /// <summary>
         /// Constructor con acceso a la BD o en modo pruebas con datos ficticios
