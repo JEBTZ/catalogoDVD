@@ -10,10 +10,10 @@ namespace App_CatalogoCD
     class Catalogo
     {
 		static public ushort contadorParaCodigo = 100;
-
+        string estado = string.Empty;
         List<dvd> _catalogoDVD = new List<dvd>();
-        DAOdvd dao = new DAOdvd();
-		//DAOdvdSQLite dao = new DAOdvdSQLite();
+        //DAOdvd dao = new DAOdvd();
+		DAOdvdSQLite dao = new DAOdvdSQLite();
 
         /// <summary>
         /// Constructor con acceso a la BD o en modo pruebas con datos ficticios
@@ -24,13 +24,13 @@ namespace App_CatalogoCD
             try
                 {
                     if (dao.Conectar())
-                        Console.WriteLine("Conexión con éxito a la BD");
+                         estado = ("Conexión con éxito a la BD");
 					else 
-						Console.WriteLine("No se puede conectar a la BD");
+						 estado = ("No se puede conectar a la BD");
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine("ERROR: " + e.Message);
+                     estado = ("ERROR: " + e.Message);
                 }
 				this.LeerDVD ();
         }
@@ -41,6 +41,11 @@ namespace App_CatalogoCD
             AddEntradas(n);
         }
 
+
+        public string Estado()
+        {
+            return estado;
+        }
         /// <summary>
         /// Crea n objetos de tipo DVD para pruebas
         /// </summary>
