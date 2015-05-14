@@ -44,6 +44,59 @@ namespace App_CatalogoCD
                     lblEstado.Text = "Registro no encontrado..";
             }
         }
+
+        private void ActualizarDVD()
+        {
+            dvd registro;
+
+            lblAccion.Text = ("Código de DVD para modificar?");
+            string codigo = tbxVarios.Text;
+
+            registro = c.LeerDVD(codigo);
+            if (registro != null)
+            {
+                PedirCampos(registro);
+
+                if (c.ActualizarDVD(registro) == 1)
+                     lblEstado.Text = ("Registro actualizado correctamente");
+                else
+                     lblEstado.Text = ("Error al actualizar el registro");
+                
+            }
+            else
+                lblEstado.Text = ("Disco no encontrado");
+        }
+
+        static void PedirCampos(dvd registro)
+        {
+            string entrada;
+
+            Console.Write("Titulo: [" + registro.Titulo + "]: ");
+            entrada = Console.ReadLine();
+            if (entrada != "")
+                registro.Titulo = entrada;
+            Console.Write("Artista: [" + registro.Artista + "]: ");
+            entrada = Console.ReadLine();
+            if (entrada != "")
+                registro.Artista = entrada;
+            Console.Write("Pais: [" + registro.Pais + "]: ");
+            entrada = Console.ReadLine();
+            if (entrada != "")
+                registro.Pais = entrada;
+            Console.Write("Compañía: [" + registro.Compania + "]: ");
+            entrada = Console.ReadLine();
+            if (entrada != "")
+                registro.Compania = entrada;
+            Console.Write("Precio: [" + registro.Precio + "]: ");
+            entrada = Console.ReadLine();
+            if (entrada != "")
+                registro.Precio = Decimal.Parse(entrada);
+            Console.Write("Año: [" + registro.Anio + "]: ");
+            entrada = Console.ReadLine();
+            if (entrada != "")
+                registro.Anio = ushort.Parse(entrada);
+        }
+
         #endregion
 
         private void btnLeer_Click(object sender, EventArgs e)
@@ -78,7 +131,7 @@ namespace App_CatalogoCD
 
         private void btnModificar_Click_1(object sender, EventArgs e)
         {
-
+            ActualizarDVD();
         }
 
         private void btnVolcar_Click(object sender, EventArgs e)
