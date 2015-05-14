@@ -201,7 +201,7 @@
             this.Controls.Add(this.btnLeer);
             this.Controls.Add(this.lblTitulo);
             this.Name = "GUI";
-            this.Text = "GUI";
+            this.Text = "App Colección de DVD\'s";
             this.ResumeLayout(false);
             this.PerformLayout();
 

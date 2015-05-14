@@ -62,16 +62,18 @@ namespace App_CatalogoCD
 
         private void btnAlAzar_Click_1(object sender, EventArgs e)
         {
-            tbxVarios.Text = "";
+            
             AnadirDVD();
             tbxVarios.Enabled = true;
+            tbxVarios.Text = "";
         }
 
         private void btnEliminar_Click_1(object sender, EventArgs e)
         {
-            tbxVarios.Text = "";
+            
             BorrarDVD();
             tbxVarios.Enabled = true;
+            tbxVarios.Text = "";
         }
 
         private void btnModificar_Click_1(object sender, EventArgs e)
@@ -82,6 +84,7 @@ namespace App_CatalogoCD
         private void btnVolcar_Click(object sender, EventArgs e)
         {
             c.XmlAFichero();
+            lblEstado.Text = c.Estado();
         }
 
         private void btnPaises_Click(object sender, EventArgs e)

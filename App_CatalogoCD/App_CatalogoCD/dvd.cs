@@ -138,7 +138,7 @@ namespace App_CatalogoCD
             xml += tab + "<compania>" + _compania + "</compania>" + nl;
             xml += tab + "<precio>" + _precio + "</precio>" + nl;
             xml += tab + "<anio>" + _anio + "</anio>" + nl;
-            xml += "<cd>"+nl;
+            xml += "</cd>"+nl;
             return xml;
         }
         public string PaisAlAzar()

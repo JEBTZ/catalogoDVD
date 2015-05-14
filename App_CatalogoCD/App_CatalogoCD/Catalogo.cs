@@ -143,6 +143,7 @@ namespace App_CatalogoCD
             Console.SetOut(tmp);    // Reestablezco la salida estandar
             Console.WriteLine(@"Se ha creado el fichero: " + ruta);
             sw1.Close();
+            estado = "Fichero volcado con éxito";
         }
 
 		public void FiltrarPorPais() 
